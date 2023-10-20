@@ -1,0 +1,286 @@
+/* :root{
+    color-scheme: dark;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tenor Sans';
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 165, 0, 1) 100%);
+}
+
+h3 {
+    font-size: xx-large;
+    font-weight: 1000;
+}
+
+header {
+    width: 100%;
+    background-image: url(image/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40dvw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+header div {
+    text-align: center;
+}
+
+header h2 {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: xx-large;
+}
+
+header h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Tilt Prism';
+    font-size: xxx-large;
+}
+
+header h1 span {
+    color: orange;
+    font-family: 'Tilt Prism';
+
+}
+
+header a {
+    display: inline;
+    background-color: orange;
+    box-shadow: inset -1px -3px 8px 1px black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+header a:hover {
+    box-shadow: 0px 0px 20px 0px #ffa500, inset -1px -3px 8px 0px black;
+    color: #ffffff;
+}
+
+header a:focus {
+    box-shadow: 0px 0px 20px 0px #ffa500, inset -1px -3px 8px 0px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    background-color: rgb(195, 127, 0);
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 250px;
+    grid-auto-rows: 300px;
+    align-items: center;
+    justify-items: center;
+}
+
+.section1 h3 {
+    grid-column: span 4;
+}
+
+.section1 img {
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 0px #ffa500;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 400px 400px;
+    grid-auto-rows: 300px;
+    align-items: center;
+    justify-items: center;
+}
+
+.section2 div {
+    text-align: center;
+}
+
+.section2 h3 {
+    grid-column: span 3;
+}
+
+.section2 h4 {
+    font-size: larger;
+    font-weight: 1500;
+}
+
+.section2 h5 {
+    font-size: medium;
+    font-weight: 800;
+}
+
+.section2 img {
+    height: 300px;
+    border-radius: 0 70px 0 70px;
+    margin-bottom: 20px;
+}
+
+.section3 {
+    text-align: center;
+}
+
+.section3 h3,
+.section4 h3 {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.section3 .back {
+    background-image: url(image/resturant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: grid;
+    grid-template-columns: minmax(200px, 400px) minmax(400px, 1000px);
+    align-content: center;
+    justify-content: center;
+}
+
+.section3 .back div:nth-child(1) {
+    background-color: #000000f0;
+    height: 300px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.section3 .back div:nth-child(1) h4 {
+    margin: 10px 0;
+    font-size: large;
+}
+
+.section3 .back div:nth-child(1) h4:nth-child(2),
+.section3 .back div:nth-child(1) h4:nth-child(6) {
+    font-family: 'Tilt Prism';
+    font-size: x-large;
+    color: #ffa500;
+}
+
+.section3 .back div:nth-child(1) span {
+    color: #ffa500;
+
+}
+
+.section3 .back div:nth-child(2) {
+    background-color: #ffffffe0;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.section3 .back div:nth-child(2) h4 {
+    font-family: 'Tilt Prism';
+    font-size: x-large;
+    color: #ffa500;
+    grid-column: span 3;
+}
+
+.section3 .back div:nth-child(2) p {
+    font-size: large;
+    grid-column: span 3;
+}
+
+.section3 .back div:nth-child(2) img {
+    border-radius: 50%;
+    height: 100px;
+}
+
+.section4 {
+    padding: 0 50px;
+}
+
+.section4 div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(200px, 400px));
+    gap: 10px;
+}
+
+.section4 div div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.section4 div div:nth-child(1) {
+    background-image: url(image/hot.jpg);
+    grid-column: span 2;
+}
+
+.section4 div div:nth-child(5) {
+    background-image: url(image/resturant.jpg);
+    grid-column: span 2;
+}
+
+.section4 div div:nth-child(2) {
+    background-image: url(image/pic2.jpg);
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.section4 div div:nth-child(3) {
+    background-image: url(image/tana.jpg);
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.section4 div div:nth-child(4) {
+    background-image: url(image/delicious.jpg);
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2px repeat(2, 1fr);
+    justify-items: center;text-align: center;
+}
+
+.footer .hr {
+    grid-column: span 3;
+    width: 100%;
+    background-color: black;
+}
+
+.footer div h4 {
+    font-family: 'Tilt Prism';
+    font-size: x-large;
+    color: #ffa500;
+    margin-bottom: 10px;
+}
+
+.footer div a {
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footer .copyright {
+        grid-column: span 3;
+        text-align: center;
+        align-self: center;
+        font-size: large;
+        font-weight: bold;
+}
+.footer .copyright span{
+        color: #ffa500;
+}
